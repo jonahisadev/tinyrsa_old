@@ -94,7 +94,7 @@ int main(int argc, char** argv)
 		p.setBit(p_size - 1, true);
 		p.setBit(p_size - 2, true);
 		p.setBit(0, true);
-		while (!is_prime(p, 1))
+		while (!is_prime(p, 4))
 			p += 2;
 		std::cout << "Generated P" << std::endl;
 		std::cout << p << std::endl;
@@ -106,7 +106,7 @@ int main(int argc, char** argv)
 		q.setBit(q_size - 1, true);
 		q.setBit(p_size - 2, true);
 		q.setBit(0, true);
-		while (!is_prime(q, 1))
+		while (!is_prime(q, 4))
 			q += 2;
 		std::cout << "Generated Q" << std::endl;
 		std::cout << q << std::endl << std::endl;
